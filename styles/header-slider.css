@@ -1,0 +1,22 @@
+.header-background{ 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 747px;
+    width: 100%;
+    z-index: -3;
+}
+
+.header-slider{ 
+   height: 747px;
+   width: 100%;
+   z-index: -3;
+}
+
+.header-slide { 
+    width: 747px;
+    height: 100%;
+    z-index: -3;
+    background-repeat: no-repeat;
+    background-size:     cover; 
+}

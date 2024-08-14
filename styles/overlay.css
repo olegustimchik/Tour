@@ -1,0 +1,112 @@
+.overlay {
+    padding-top: 20px ;
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: fixed; 
+    z-index: 1000; 
+    left: 0;
+    top: 0;
+    background-color: rgba(18, 69, 100, 1); 
+    overflow-x: hidden; 
+    overflow-y: hidden;
+    backdrop-filter: blur(70px);
+    transition: 0.5s; 
+}
+
+.deactivate { 
+    display: none;
+}
+
+.deactivate-scroll{ 
+    overflow-y: hidden;
+
+}
+
+.overlay-content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    text-align: center; 
+    -webkit-box-align: center;
+    margin-top: 50px;
+    gap: 20px
+}
+
+.contact-information.overlay-content { 
+    margin-top: 120px;
+    padding: 0;
+}
+
+.contact-information.overlay-content .contact-item{ 
+    width: 100%;
+    margin: 0;
+}
+
+.overlay-content.nav-menu-container { 
+    margin-top: 16px;
+    padding: 0;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    height: 100%;
+    background-color: transparent; 
+}
+
+.overlay-content > .nav-menu { 
+    font-size: 18px;
+    flex-direction: column;
+    padding: 0;
+}
+
+.overlay-content .nav-menu li.menu-list:not(:last-child) { 
+    margin-bottom: 30px;
+}
+
+.overlay-content .nav-menu li.menu-list{
+    position: relative;
+    padding: 0;
+}
+
+.overlay > ul { 
+    padding: 0;
+}
+
+.overlay-content .nav-menu li.menu-list .space { 
+    display: none;
+}
+
+
+.overlay-content .nav-menu li.menu-list div#services-tab:hover ul#services-tab-detail.nav-menu-list-sub { 
+    position: static; 
+    padding-left: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.overlay-content .nav-menu li.menu-list div#services-tab:hover ul#services-tab-detail.nav-menu-list-sub li.menu-sub-list{ 
+    color: black; 
+    text-align: start;
+}
+
+.overlay-content .nav-menu li.menu-list div#tour-tab:hover ul#tour-tab-detail.nav-menu-list-sub li.menu-sub-list{ 
+    color: black; 
+    text-align: start;
+    justify-content: start;
+}
+
+.overlay-content .nav-menu li.menu-list div#tour-tab:hover ul#tour-tab-detail.nav-menu-list-sub { 
+    position: static; 
+    padding-left: 0;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    
+}

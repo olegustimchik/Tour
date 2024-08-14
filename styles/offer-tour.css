@@ -1,0 +1,189 @@
+.offer-tour { 
+    display: flex;
+    height: 280px;
+    padding-left: 400px;
+    padding-top: 45px;
+    padding-bottom: 40px ;
+    background-image: url("../public/coral.jpg") ;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offer-tour-title { 
+    font-family: "Avenir", sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 800;
+    color: #fffc;
+}
+
+@media (max-width: 600px){ 
+    .offer-tour  { 
+      height: fit-content;
+        padding-left: 16px;
+    }
+    .offer-tour-title { 
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px){ 
+    .offer-tour  { 
+      height: fit-content;
+      padding-left: 16px;
+    }
+}
+
+@media (min-width: 900px){ 
+    .offer-tour  { 
+      height: fit-content;
+      padding-left: 60px;
+    }
+
+}
+
+@media (min-width: 1200px ){ 
+    .offer-tour  { 
+      height: fit-content;
+      padding-left: 150px;
+    }
+}
+
+
+.offer-tour-form { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding-left: 40px ;
+    padding-right: 25px;
+    height: 134px;
+    gap: 30px;
+}
+
+@media (max-width: 1230px) {
+  .offer-tour-form {
+    flex-direction: column;
+    height: fit-content;
+  }
+}
+.offer-input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-bottom: 1px rgba(229, 229, 229, 0.4) solid;
+    outline: none;
+    color: #e5e5e5;
+    font-family: 'Arial Regular';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    position: relative;
+    width: 152px;
+}
+
+.offer-tour-button { 
+    width: 257px;
+    height: 51px;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: #fbd341;
+    border:none ;
+    padding: 0;
+    font-family: "Avenir", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 12px;
+}
+
+.country-select {
+    position: relative;
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 18px;
+    color: #60666d;
+  }
+  
+  
+.select-box__current {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus input:-webkit-autofill, textarea:-webkit-autofill, textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus, select:-webkit-autofill, select:-webkit-autofill:hover, select:-webkit-autofill:focus {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px rgba(229, 229, 229, 0.4) solid;
+  -webkit-text-fill-color: #FFF;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  box-shadow: 0 0 0px 1000px transparent inset;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  -o-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 100%, rgba(0, 174, 255, 0.04) 50%, rgba(255, 255, 255, 0) 51%, rgba(0, 174, 255, 0.03) 100%);
+}
+ 
+  
+.select-box__value {
+  display: flex;
+}
+  
+.select-box__input {
+  display: none;
+}
+
+.select-box__input-text {
+  display: none;
+  font-size: 14px; 
+  font-family: "Avenir", sans-serif;
+  font-weight: 500;
+  line-height: 14px;
+  color: rgba(0, 0, 0, 1)
+}
+
+.select-box__value:hover .select-box__input-text { 
+  color: #fbd341;
+}
+
+#select-box { 
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  height: 127px;
+  width: 181px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  z-index: 1000; 
+  background-color: #e5e5e5;
+}
+
+.active-text { 
+  color: #e5e5e5;
+  font-family: 'Arial Regular';
+  font-size: 18px;
+  font-weight: 400; 
+}
+
+.select-box__current .arrow-down { 
+  display: block;
+  align-items: center;
+  width: 15px;
+  height: 10px;
+}
